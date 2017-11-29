@@ -13,9 +13,11 @@
 
 ## Examples
 
+Pass a `number` argument to define the length of the output uid.
+
 ```js
- uid(10) => "hbswt489ts"
- uid() => "rhvtfnt" Defaults to 7
+ uid(10); // -> 'hbswt489ts'
+ uid(); // -> 'rhvtfnt' Default length is 7
 ```
 
 ## License
