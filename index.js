@@ -11,6 +11,10 @@ module.exports = uid;
  * @return {String} uid
  */
 
-function uid(len) {
-  return Math.random().toString(35).substr(2, len || 7);
+function uid(len, options) {
+  var _uid = Math.random().toString(35).substr(2, len || 7);
+  if(options && options.uppercase) {
+    _uid.toUpperCase();
+  }
+  return _uid;
 }
